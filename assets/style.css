@@ -92,9 +92,10 @@ a:focus-visible,
 
 .site-header .wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.25rem 1rem;
   padding-block: 0.75rem;
 }
 
@@ -106,6 +107,7 @@ a:focus-visible,
   font-weight: 700;
   font-size: 1.125rem;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .brand img {
@@ -196,6 +198,26 @@ a:focus-visible,
 
 .hero .actions a:not(.button) {
   color: #d7e6ff;
+}
+
+.hero .note {
+  margin: 0.875rem 0 0;
+  font-size: 0.9375rem;
+  color: #d7e6ff;
+}
+
+.hero .note a {
+  color: #fff;
+}
+
+.steps {
+  max-width: 44rem;
+  padding-left: 1.5rem;
+}
+
+.steps li {
+  margin-bottom: 0.625rem;
+  padding-left: 0.25rem;
 }
 
 .hero-art img {

@@ -2,14 +2,14 @@
 
 Página de presentación y política de privacidad de [MesClaro](https://github.com/franbenaglia/mesclaro), un planificador de gastos mensuales para Android, privado y sin conexión.
 
-Publicado con GitHub Pages en <https://franbenaglia.github.io/mesClaroLanding/>.
+Publicado con GitHub Pages en <https://mesclaro.fab-apps.com/> (dominio propio, archivo `CNAME`).
 
 | Página | Español | English |
 | --- | --- | --- |
 | Presentación | `index.html` | `en/index.html` |
 | Política de privacidad | `privacy.html` | `en/privacy.html` |
 
-La dirección de la política de privacidad para la ficha de Google Play es <https://franbenaglia.github.io/mesClaroLanding/privacy.html>.
+La dirección de la política de privacidad es <https://mesclaro.fab-apps.com/privacy.html>.
 
 ## Estructura
 
@@ -24,9 +24,15 @@ Es un sitio estático: no usa scripts, fuentes externas, cookies ni analíticas.
 
 En GitHub: Settings → Pages → Source «Deploy from a branch», rama `main`, carpeta `/ (root)`.
 
-## Al publicar la app en Google Play
+## Descarga de la app
 
-En `index.html` y `en/index.html`, reemplazar el botón «Próximamente en Google Play» por un enlace a `https://play.google.com/store/apps/details?id=com.fabapps.mesclaro`.
+El código de la app está en un repositorio privado, así que el APK se publica en los **Releases de este repositorio**, que es público.
+
+- El archivo adjunto se llama siempre `MesClaro.apk`. Por eso el botón de descarga usa la dirección fija `https://github.com/franbenaglia/mesClaroLanding/releases/latest/download/MesClaro.apk`, que apunta sola a la última versión.
+- Cada release lleva la etiqueta `v<versión>` (por ejemplo `v0.1.0`) y adjunta también `MesClaro.apk.sha256`.
+- Los pasos para publicar una versión nueva están en `CLAUDE.md` del repositorio de la app.
+
+Si algún día la app se publica en Google Play, agregar un segundo botón con `https://play.google.com/store/apps/details?id=com.fabapps.mesclaro`.
 
 ## Si cambia la política de privacidad
 
